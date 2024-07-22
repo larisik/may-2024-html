@@ -1,0 +1,219 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital@0;1&family=Taviraj:wght@400;500&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Taviraj", serif;
+    font-weight: 400;
+    font-style: normal;
+    background: #F7F6F4;
+}
+
+.container {
+    max-width: 1110px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+/*------HEADER------*/
+
+header {
+    padding: 42px 0 90px 0;
+}
+
+header .header-wrap {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 186px;
+}
+
+header .nav {
+    /*margin: 0 auto;*/
+}
+
+header .nav__list {
+    display: flex;
+    gap: 40px;
+}
+
+header .nav__list .nav__item, .dropdown__item {
+    list-style: none;
+}
+
+header .nav__list .nav__item {
+    position: relative;
+}
+
+header .nav__list .nav__item .nav__link,  .dropdown__link{
+    color: #333;
+    font-size: 20px;
+    letter-spacing: 0.4px;
+    text-decoration: none;
+}
+
+ul.dropdown {
+    position: absolute;
+    display: none;
+}
+
+
+
+.nav>.nav__list>.nav__item:hover .dropdown{
+    display: block;
+
+    padding: 15px 41px 23px 20px;
+    flex-direction: column;
+    align-items: flex-start;
+    background: rgba(255, 255, 255, 0.70);
+}
+
+
+/*------SECTION PREVIEW------*/
+
+section .preview-wrap {
+
+    background: #F1DDC9;
+    display: flex;
+    padding: 14px 0 24px 0;
+    align-items: center;
+}
+
+section .preview-container {
+    max-width: 585px;
+    padding-left: 56px;
+}
+
+.preview__title {
+    color: #333;
+    font-size: 60px;
+    font-weight: 400;
+    line-height: 80px; /* 133.333% */
+    letter-spacing: 1.2px;
+    margin-bottom: 32px;
+}
+
+.preview__text {
+    color: #333;
+    font-family: "Nunito", sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 0.48px;
+    margin-bottom: 79px;
+}
+
+.preview-btn {
+    width: 208px;
+    height: 62px;
+    background: #D84727;
+    color: #FFF;
+    font-family: "Taviraj", serif;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 0.4px;
+    border: none;
+}
+
+/*------SECTION MONTHLY-DEALS------*/
+section.monthly-deals {
+    padding-top: 79px;
+    padding-bottom: 66px;
+}
+
+.monthly-deals__card-wrap {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 30px;
+}
+
+.monthly-deals__card {
+    padding: 0 24px 33px 24px;
+    background: #FFF;
+    position: relative;
+    display: flex;
+    align-items: flex-end;
+    width: 255px;
+    height: 278px;
+    box-shadow: 0 20px 20px 0 rgba(0, 0, 0, 0.04);
+}
+
+.monthly-deals__title {
+    color: #333;
+    font-size: 36px;
+    font-weight: 500;
+    line-height: 40px; /* 111.111% */
+    letter-spacing: 0.72px;
+    margin-bottom: 129px;
+}
+
+
+
+.monthly-deals__card-img {
+    position: absolute;
+    top: -40px;
+
+}
+
+.monthly-deals__card-title {
+    color: #333;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 32px; /* 133.333% */
+}
+
+/*----SECTION NEWS----*/
+
+section.news {
+    padding-top: 62px;
+    padding-bottom: 151px;
+}
+
+.news__title {
+    color: #333;
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 40px; /* 111.111% */
+    letter-spacing: 0.72px;
+    margin-bottom: 43px;
+}
+
+.news-wrap {
+    display: flex;
+    align-items: center;
+    gap: 65px;
+}
+
+.news-container {
+max-width: 350px;;
+}
+
+.news__sub-title {
+    color: #777;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 40px; /* 200% */
+    letter-spacing: 0.4px;
+    margin-bottom: 16px;
+}
+
+.news__text {
+    color: #333;
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 48px; /* 133.333% */
+    letter-spacing: 0.72px;
+}

@@ -1,0 +1,25 @@
+@media screen and (max-width: 480px) {
+    .content {
+        max-width: 343px;
+    }
+
+    h1 {
+        font-size: 28px;
+    }
+
+    p {
+        font-size: 20px;
+        margin-top: 18px;
+        margin-bottom: 32px;
+    }
+
+    .content div.wrapper {
+        flex-direction: column;
+        gap: 38px;
+        margin-top: 32px;
+    }
+
+    button {
+        padding: 0 30px;
+    }
+}

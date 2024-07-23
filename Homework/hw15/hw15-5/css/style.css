@@ -1,0 +1,83 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Inter", sans-serif;
+    font-style: normal;
+}
+
+section {
+
+    height: 100vh;
+    padding: 64px 32px;
+    display: flex;
+    justify-content: center;
+}
+
+.content {
+    max-width: 587px;
+}
+
+.btn-wrap {
+    display: flex;
+    align-items: center;
+    gap: 24px;
+    margin-bottom: 24px;
+}
+
+.btn-wrap button {
+    padding: 8px 16px;border-radius: 8px;
+    background: #FF9500;
+    color: #FFF;
+    font-size: 18px;
+    line-height: 140%; /* 25.2px */
+    border: none;
+    cursor: pointer;
+}
+
+.btn-wrap a {
+    color: #6F1DF4;
+    font-size: 18px;
+    line-height: 140%; /* 25.2px */
+}
+
+h1 {
+    font-size: 64px;
+    line-height: 120%; /* 76.8px */
+    margin-bottom: 24px;
+}
+
+.content ul {
+    padding-left: 35px;
+    margin-bottom: 40px;
+}
+
+.content ul>li {
+    color: #3C3C43;
+    font-size: 24px;
+    line-height: 140%; /* 33.6px */
+}
+
+.content>button {
+    width: 136px;
+    height: 56px;
+    border-radius: 8px;
+    background: #6F1DF4;
+    color: #FFF;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 120%; /* 19.2px */
+    border: none;
+    cursor: pointer;
+}
+
+.iframe {
+
+     box-shadow: 0 75px 150px 0 rgba(39, 37, 29, 0.15);
+ }
+

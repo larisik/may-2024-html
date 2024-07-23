@@ -1,0 +1,17 @@
+@media screen and (min-width: 480px) and  (max-width: 1280px){
+    section.article {
+        flex-wrap: nowrap;
+    }
+
+    section.article div {
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    section.article div p {
+        transform: rotate(-90deg);
+    }
+
+}

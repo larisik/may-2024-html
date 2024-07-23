@@ -1,0 +1,33 @@
+@media screen and (max-width: 480px) {
+    section {
+        flex-direction: column;
+        gap: 24px;
+        height: 100%;
+        padding: 32px 16px;
+    }
+
+
+    .btn-wrap a {
+        font-size: 14px;
+    }
+
+    h1 {
+        max-width: 300px;
+        font-size: 32px;
+        margin-bottom: 16px;
+    }
+
+    .content ul {
+        margin-bottom: 16px;
+    }
+
+    .content ul>li {
+        font-size: 18px;
+    }
+
+
+    .iframe {
+        width: 100%;
+        height: 30vh;
+    }
+}

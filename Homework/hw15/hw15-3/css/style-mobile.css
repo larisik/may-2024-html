@@ -1,0 +1,45 @@
+@media screen and (max-width: 480px) {
+
+
+    header {
+        height: 100%;
+    }
+
+    ul {
+        flex-direction: column;
+    }
+
+    ul li {
+    }
+
+    ul li a {
+        display: inline-block;
+        width: 100%;
+        border-radius: 10px;
+        text-align: center;
+        font-size: 18px;
+    }
+
+    section.banner {
+        height: 20vh;
+        justify-content: center;
+        align-items: center;
+    }
+
+    section.article {
+        height: 60vh;
+        flex-direction: column;
+    }
+
+
+    section.article div {
+        width: calc(100% - 10px);
+        height: calc(25% - 10px);
+        justify-content: center;
+        align-items: center;
+    }
+
+    footer {
+        height: 100%;
+    }
+}

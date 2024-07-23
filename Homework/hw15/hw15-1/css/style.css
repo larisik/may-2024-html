@@ -1,0 +1,37 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+p {
+    font-size: 36px;
+}
+header {
+    height: 30vh;
+    background-color: #8E88C1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+section {
+    display: flex;
+    height: 70vh;
+}
+
+section div:first-child {
+    background-color: #3F50E7;
+    width: 70vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+section div:last-child {
+    background-color: #80D2C4;
+    width: 30vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

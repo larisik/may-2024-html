@@ -1,0 +1,83 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+        body {
+            display: grid;
+            height: 100vh;
+            grid-template-rows: 2fr repeat(6, 1fr) 2fr;
+            grid-template-columns: 3fr 1fr;
+            grid-template-areas:
+            'header header'
+            'sec-top aside-top'
+            'sec-top aside-top'
+            'sec-center aside-top'
+            'sec-center aside-bottom'
+            'sec-bottom aside-bottom'
+            'sec-bottom aside-bottom'
+            'footer footer';
+        }
+        header{
+            grid-area: header;
+            background-color: #8D8484;
+        }
+        section.top{
+            grid-area: sec-top;
+            background-color: #776969;
+        }
+        section.center{
+            grid-area: sec-center;
+            background-color: #643030;
+        }
+        section.bottom{
+            grid-area: sec-bottom;
+            background-color: #441818;
+        }
+        aside.top{
+            grid-area: aside-top;
+            background-color: #937575;
+        }
+        aside.bottom{
+            grid-area: aside-bottom;
+            background-color: #644C4C;
+        }
+        footer{
+            grid-area: footer;
+            background-color: #BDBDBD;
+        }
+
+        header, section, aside, footer {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        section, aside {
+            color: white;
+        }
+
+        span {
+            font-size: 45px;
+        }
+    </style>
+
+</head>
+<body>
+    <header><span>Header</span></header>
+    <section class="top"><span>Content - 1</span></section>
+    <section class="center"><span>Content - 2</span></section>
+    <section class="bottom"><span>Content - 3</span></section>
+    <aside class="top"><span>Spam - 1</span></aside>
+    <aside class="bottom"><span>Spam - 2</span></aside>
+    <footer><span>Footer</span></footer>
+</body>
+</html>

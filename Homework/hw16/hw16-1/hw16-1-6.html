@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            display: grid;
+            height: 100vh;
+            grid-template-rows: 2fr 3fr 3fr 2fr;
+            grid-template-columns: 1fr 1fr;
+            grid-template-areas:
+            'header header'
+            'top top'
+            'left right'
+            'footer footer';
+        }
+
+        header{
+            grid-area: header;
+        }
+        section.top{
+            grid-area: top;
+            background-color: #A4A4A4;
+        }
+        section.left{
+            grid-area: left;
+            background-color: #C8C5C5;
+        }
+        section.right{
+            grid-area: right;
+            background-color: #9F9B9B;
+        }
+        footer{
+            grid-area: footer;
+        }
+        header, footer {
+            background-color: #D9D9D9;
+        }
+
+        @media screen and (max-width: 480px) {
+            body {
+                grid-template-columns: 1fr;
+                grid-template-rows: repeat(5, 1fr);
+                grid-template-areas:
+                'header'
+                'top'
+                'left'
+                'right'
+                'footer';
+            }
+        }
+
+    </style>
+</head>
+<body>
+<header></header>
+<section class="top"></section>
+<section class="left"></section>
+<section class="right"></section>
+<footer></footer>
+</body>
+</html>
